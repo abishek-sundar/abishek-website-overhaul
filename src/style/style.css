@@ -4,10 +4,20 @@ body{
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    padding-top:70px;
+    /* padding-top:70px; */
+    
+}
+.tabs{
+    font-family: 'Righteous', cursive;
+}
+.brand{
     
 }
 
+.navbar-light .navbar-brand {
+    font-family: 'Lalezar', cursive;
+    color: rgba(0,0,0, 0.7);
+}
 body, html {
     height: 100%;
 }
@@ -55,4 +65,10 @@ body, html {
     width: 80%;
     padding: 20px;
     text-align: center;
+}
+
+.fixNavToTop{
+    position: absolute;
+    top:0%;
+    transform: translate(0%,-100%);
 }
