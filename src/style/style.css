@@ -7,11 +7,8 @@ body{
     /* padding-top:70px; */
     
 }
-.tabs{
+.righteous{
     font-family: 'Righteous', cursive;
-}
-.brand{
-    
 }
 
 .navbar-light .navbar-brand {
@@ -21,7 +18,9 @@ body{
 body, html {
     height: 100%;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .myPic{
     width:100%;
 }
@@ -33,6 +32,7 @@ body, html {
 .landingText{
     font-family: 'Raleway', sans-serif;
     font-size: 7vw;
+    border-bottom: 1px solid rgb(105,105,105);
 }
 
 .bg-image{
@@ -69,6 +69,8 @@ body, html {
 
 .fixNavToTop{
     position: absolute;
-    top:0%;
-    transform: translate(0%,-100%);
+}
+
+#projects{
+    height:100%;
 }
