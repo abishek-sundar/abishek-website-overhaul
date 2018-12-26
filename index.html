@@ -9,18 +9,19 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Raleway|Lalezar|Righteous" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.css" /> -->
   <link type="text/css" rel="stylesheet" href="src/style/style.css" />
 
   <title>Abishek Sundar</title>
 </head>
 
 <body>
-  <section id="me"></section>
-    <div class="bg-image"></div>
-   
-      <nav class="navbar navbar-expand-md navbar-light fixed-top align-items-center">
+  <!-- <div class="bg-image"></div> -->
+  <div id="fullpage">
+    <div class = "section" id = "me">
+      <nav class="navbar navbar-expand-md navbar-light align-items-center">
         <div class="container">
           <a class="navbar-brand brand" href="#me">ABISHEK SUNDAR</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -49,28 +50,30 @@
 
       <div class="container intro-text">
         <div class="row">
-          <div class="col-md-6 col-4">
-            <div class="landingText text-center">
-              Hi, I'm Abishek
-            </div>
-            <div class="landingNote">
-              I study computer engineering at University of Toronto.
-            </div>
-          </div>
-          <div class="col-md-6 col-8">
+          
+          <div class="col-sm-6 order-sm-2">
             <img class=" myPic" src="assets/misc/me.png" alt="Me">
           </div>
+          <div class="col-sm-6 order-sm-1">
+              <div class="landingText text-center">
+                Hi, I'm Abishek
+              </div>
+              <div class="landingNote d-none d-sm-block">
+                I study computer engineering at University of Toronto.
+              </div>
+            </div>
         </div>
       </div>
-    
-  <section id="projects">
-    <h1><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit similique nemo odit voluptatibus quas.
-      Perferendis ipsum fugit aliquam qui pariatur quidem hic quae natus suscipit delectus illum libero, sit
-      voluptatum.</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, officiis laborum minima
-    blanditiis provident temporibus et autem illum culpa aspernatur maxime expedita cupiditate quidem distinctio
-    magnam, iusto aut ratione mollitia.
-  </section>
-
+    </div>
+    <div class="section" id = "projects">
+        <h1><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit similique nemo odit
+          voluptatibus quas.
+          Perferendis ipsum fugit aliquam qui pariatur quidem hic quae natus suscipit delectus illum libero, sit
+          voluptatum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, officiis laborum minima
+          blanditiis provident temporibus et autem illum culpa aspernatur maxime expedita cupiditate quidem distinctio
+          magnam, iusto aut ratione mollitia.</h1>
+  </div>
+  </div>
 
 
 
@@ -91,6 +94,20 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/vendors/scrolloverflow.min.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.js"></script>
+
+  <script>
+    new fullpage('#fullpage', {
+      //options here
+      autoScrolling: true,
+      scrollHorizontally: true
+    });
+
+    //methods
+    fullpage_api.setAllowScrolling(false);
+  </script> -->
 </body>
 
 </html>
