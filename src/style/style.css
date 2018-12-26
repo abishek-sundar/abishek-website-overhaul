@@ -1,10 +1,8 @@
 body{
-    /* background: url('../../assets/misc/bg.jpg') no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    /* padding-top:70px; */
     
 }
 .righteous{
@@ -12,7 +10,7 @@ body{
 }
 
 .navbar-light .navbar-brand {
-    font-family: 'Lalezar', cursive;
+    /* font-family: 'Raleway', cursive; */
     color: rgba(0,0,0, 0.7);
 }
 body, html {
@@ -45,17 +43,6 @@ html{
     height:70%;
     padding-top:3%;
     text-align: center;
-    /* font-weight: bold; */
-    /* border: 3px solid #f1f1f1; */
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2; */
-    /* margin-top:10%; */
-    /* width: 80%;
-    padding: 20px;
-    text-align: center; */
 }
 
 .fixNavToTop{
@@ -68,7 +55,6 @@ html{
 #me{
     overflow:auto;
     position:relative;
-    /* background-color: pink; */
 }
 
 #me:before{
@@ -96,4 +82,8 @@ html{
 
 #projects{
     background-color: pink;
+}
+
+#contact{
+    background-color: blue;
 }
