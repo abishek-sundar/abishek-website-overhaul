@@ -3,6 +3,7 @@ body{
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    padding-top:70px;
     
 }
 .righteous{
@@ -63,6 +64,11 @@ html{
     position:relative;
 }
 
+.navbar.scrolled{
+    background: rgba(115,194,251,0.7);
+    transition: background 500ms;
+
+}
 #me:before{
     content: "";
     position: fixed;
