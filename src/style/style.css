@@ -1,6 +1,6 @@
 body{
     -webkit-background-size: cover;
-    -moz-background-size: cover;
+    -moz-background-size: covscroller;
     background-size: cover;
     -o-background-size: cover;
     padding-top:70px;
@@ -10,6 +10,10 @@ body{
     font-family: 'Righteous', cursive;
 }
 
+.trans-nav{
+    background-color: rgba(0,0,0,0);
+    transition: background 500ms;
+}
 .navbar-light .navbar-brand {
     /* font-family: 'Raleway', cursive; */
     color: rgba(0,0,0, 0.7);
@@ -21,35 +25,23 @@ html{
     scroll-behavior: smooth;
 }
 .myPic{
-    /* width:100%; */
     max-width: 60%;
     max-height: 80%;
     object-fit: contain;
 }
 
-.intro-container-container{
+.intro-container{
     width:80vw;
     height: 75vh;
-    /* margin-right; 10%; */
     overflow: hidden;
-    padding: 0px;
+    /* margin-top:6%; */
 }
-.intro-container{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-}
-.intro-row{
-    height: 100%;
-    /* overflow: hidden; */
-}
+
 .landingNote{
     font-family: 'Raleway', sans-serif;
     font-size: calc(20px + (36 - 20) * ((100vw - 300px) / (1600 - 300)));
     color: rgb(105,105,105);
     text-align: center;
-    /* border-top: 1px solid rgb(105,105,105); */
 }
 .landingNote2{
     font-family: 'Raleway', sans-serif;
@@ -60,17 +52,16 @@ html{
 .landingText{
     font-family: 'Raleway', sans-serif;
     font-size: calc(42px + (118 - 42) * ((100vw - 300px) / (1600 - 300)));
-    /* border-bottom: 1px solid rgb(105,105,105); */
 }
 
 .landingLine{
     margin: 0px;
     padding: 0px;
-    border-bottom: 1px solid rgb(105,105,105);
+    border-top: 1px solid rgb(105,105,105);
+    border-bottom: 2px solid rgba(0,0,0,0.5);
 }
 .intro-text{
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    background-color: rgba(0,0,0, 0.4); 
     color: white;
     padding:1%;
     text-align: center;
@@ -78,9 +69,6 @@ html{
     width: 100%;
 }
 
-.fixNavToTop{
-    position: absolute;
-}
 .section{
     height:100vh;
 }
@@ -94,6 +82,10 @@ html{
     background: rgba(115,194,251,0.95);
     transition: background 500ms;
 
+}
+.blue-bg{
+    background: rgba(115,194,251,0.95);
+    transition: background 500ms;
 }
 #me:before{
     content: "";
@@ -123,9 +115,11 @@ html{
 }
 
 #contact{
-    background-color: blue;
+    background-color: grey;
 }
-
+#about{
+    background-color: darkorchid;
+}
 .scroll-down{
     text-align: center;
     font-size: 3.5em;
