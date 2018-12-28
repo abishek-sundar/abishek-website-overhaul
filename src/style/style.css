@@ -128,5 +128,6 @@ html{
 
 .scroll-down:hover{
     color: white;
+    transition: color 1000ms;
     text-decoration: none;
 }
