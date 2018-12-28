@@ -22,7 +22,7 @@ html{
 }
 .myPic{
     /* width:100%; */
-    max-width: 100%;
+    max-width: 60%;
     max-height: 80%;
     object-fit: contain;
 }
