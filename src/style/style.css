@@ -74,6 +74,8 @@ html{
     color: white;
     padding:1%;
     text-align: center;
+    height: 100%;
+    width: 100%;
 }
 
 .fixNavToTop{
