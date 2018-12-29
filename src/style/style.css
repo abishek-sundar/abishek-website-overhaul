@@ -1,10 +1,9 @@
 body{
     -webkit-background-size: cover;
-    -moz-background-size: covscroller;
+    -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     padding-top:70px;
-    
 }
 .righteous{
     font-family: 'Righteous', cursive;
@@ -15,7 +14,6 @@ body{
     transition: background 500ms;
 }
 .navbar-light .navbar-brand {
-    /* font-family: 'Raleway', cursive; */
     color: rgba(0,0,0, 0.7);
 }
 body, html {
@@ -25,8 +23,8 @@ html{
     scroll-behavior: smooth;
 }
 .myPic{
-    max-width: 60%;
-    max-height: 80%;
+    flex-grow: 1;
+    max-width: 80%;
     object-fit: contain;
 }
 
@@ -34,21 +32,14 @@ html{
     width:80vw;
     height: 75vh;
     overflow: hidden;
-    /* margin-top:6%; */
 }
-
 .landingNote{
     font-family: 'Raleway', sans-serif;
     font-size: calc(20px + (36 - 20) * ((100vw - 300px) / (1600 - 300)));
     color: rgb(105,105,105);
     text-align: center;
 }
-.landingNote2{
-    font-family: 'Raleway', sans-serif;
-    font-size: 4vw;
-    color: rgb(105,105,105);
-    text-align: center; 
-}
+
 .landingText{
     font-family: 'Raleway', sans-serif;
     font-size: calc(42px + (118 - 42) * ((100vw - 300px) / (1600 - 300)));
@@ -67,10 +58,6 @@ html{
     text-align: center;
     height: 100%;
     width: 100%;
-}
-
-.section{
-    height:100vh;
 }
 
 #me{
@@ -124,8 +111,11 @@ html{
     text-align: center;
     font-size: 3.5em;
     color: rgba(0,0,0, 0.4);
+    transition: color 500ms;
 }
-
+#projects, #contact{
+    margin-top:-8px;
+}
 .scroll-down:hover{
     color: white;
     transition: color 1000ms;
