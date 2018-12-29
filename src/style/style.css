@@ -100,12 +100,14 @@ html{
 #projects{
     background-color: pink;
 }
-
+.code-joke{
+    object-fit: contain;
+}
 #contact{
     background-color: grey;
 }
 #about{
-    background-color: darkorchid;
+    background-color: #212121;
 }
 .scroll-down{
     text-align: center;
@@ -113,8 +115,15 @@ html{
     color: rgba(0,0,0, 0.4);
     transition: color 500ms;
 }
-#projects, #contact{
-    margin-top:-8px;
+.about-text{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+}
+
+.about-heading{
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: 1px solid cornsilk;
+    font-size: 4em;
 }
 .scroll-down:hover{
     color: white;
