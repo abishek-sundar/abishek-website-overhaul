@@ -10,17 +10,17 @@ function changeBg() {
   nav.classList.toggle("blue-bg");
 }
 
-function removeBlue(){
+function removeBlue() {
   var nav = document.querySelector("#main-navbar");
   var classes = nav.classList;
-  for (var i = 0; i < classes.length; i++){
-    if (classes[i] == "blue-bg"){
+  for (var i = 0; i < classes.length; i++) {
+    if (classes[i] == "blue-bg") {
       document.querySelector("button").click();
     }
   }
 }
 
-$(function(){
+$(function () {
   var mdEventListener = window.matchMedia("(max-width: 768px)");
   mdEventListener.addListener(removeBlue);
 });
