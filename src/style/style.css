@@ -98,7 +98,7 @@ html{
 }
 
 #projects{
-    background-color: pink;
+    background-color:  #7acfd6 ;
 }
 .code-joke{
     object-fit: contain;
@@ -124,6 +124,16 @@ html{
     font-family: 'Quicksand', sans-serif;
     border-bottom: 1px solid cornsilk;
     font-size: 4em;
+}
+
+.projects-heading{
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: 1px solid black;
+    font-size: 4em;
+}
+
+#projects{
+    height: 100vh;
 }
 .scroll-down:hover{
     color: white;

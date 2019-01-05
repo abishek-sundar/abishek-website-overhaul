@@ -5,22 +5,31 @@ $(function () {
   });
 });
 
-function changeBg() {
-  var nav = document.querySelector("#main-navbar");
-  nav.classList.toggle("blue-bg");
-}
-
-function removeBlue() {
-  var nav = document.querySelector("#main-navbar");
-  var classes = nav.classList;
-  for (var i = 0; i < classes.length; i++) {
-    if (classes[i] == "blue-bg") {
-      document.querySelector("button").click();
-    }
-  }
-}
-
 $(function () {
   var mdEventListener = window.matchMedia("(max-width: 768px)");
-  mdEventListener.addListener(removeBlue);
+  mdEventListener.addListener(function () {
+    var nav = document.querySelector("#main-navbar");
+    var classes = nav.classList;
+    for (var i = 0; i < classes.length; i++) {
+      if (classes[i] == "blue-bg") {
+        document.querySelector("button").click();
+      }
+    }
+  });
 });
+
+(function () {
+  var html = document.querySelector("html");
+  if (html.scrollTop != 0) {
+    var nav = document.querySelector("#main-navbar");
+    nav.classList.toggle("scrolled");
+  }
+})();
+
+(function () {
+  var toggler = document.querySelector(".navbar-toggler");
+  toggler.addEventListener("click", function () {
+    var nav = document.querySelector("#main-navbar");
+    nav.classList.toggle("blue-bg");
+  });
+})();
