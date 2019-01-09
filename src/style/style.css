@@ -132,9 +132,9 @@ html{
     font-size: 4em;
 }
 
-#projects{
+/* #projects{
     height: 100vh;
-}
+} */
 .scroll-down:hover{
     color: white;
     transition: color 1000ms;
