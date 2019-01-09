@@ -1,92 +1,104 @@
-body{
+body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    padding-top:70px;
+    padding-top: 70px;
 }
-.righteous{
+
+.righteous {
     font-family: 'Righteous', cursive;
 }
 
-.trans-nav{
-    background-color: rgba(0,0,0,0);
+.trans-nav {
+    background-color: rgba(0, 0, 0, 0);
     transition: background 500ms;
 }
+
 .navbar-light .navbar-brand {
-    color: rgba(0,0,0, 0.7);
+    color: rgba(0, 0, 0, 0.7);
 }
-body, html {
+
+body,
+html {
     height: 100%;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-.myPic{
+
+.myPic {
     flex-grow: 1;
     max-width: 80%;
     object-fit: contain;
 }
 
-.intro-container{
-    width:80vw;
+.intro-container {
+    width: 80vw;
     height: 75vh;
     overflow: hidden;
 }
-.landingNote{
+
+.landingNote {
     font-family: 'Raleway', sans-serif;
     font-size: calc(20px + (36 - 20) * ((100vw - 300px) / (1600 - 300)));
-    color: rgb(105,105,105);
+    color: rgb(105, 105, 105);
     text-align: center;
 }
 
-.landingText{
+.landingText {
     font-family: 'Raleway', sans-serif;
     font-size: calc(42px + (118 - 42) * ((100vw - 300px) / (1600 - 300)));
 }
 
-.landingLine{
+.landingLine {
     margin: 0px;
     padding: 0px;
-    border-top: 1px solid rgb(105,105,105);
-    border-bottom: 2px solid rgba(0,0,0,0.5);
+    border-top: 1px solid rgb(105, 105, 105);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
-.intro-text{
-    background-color: rgba(0,0,0, 0.4); 
+
+.intro-text {
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
-    padding:1%;
+    padding: 1%;
     text-align: center;
     height: 100%;
     width: 100%;
 }
 
+#me {
+    overflow: auto;
+    position: relative;
+}
+
+.navbar.scrolled {
+    background: rgba(115, 194, 251, 0.95);
+    transition: background 500ms;
+
+}
+
+.blue-bg {
+    background: rgba(115, 194, 251, 0.95);
+    transition: background 500ms;
+}
 #me{
-    overflow:auto;
-    position:relative;
+    height: 100vh;
 }
-
-.navbar.scrolled{
-    background: rgba(115,194,251,0.95);
-    transition: background 500ms;
-
-}
-.blue-bg{
-    background: rgba(115,194,251,0.95);
-    transition: background 500ms;
-}
-#me:before{
+#me:before {
     content: "";
     position: fixed;
     left: 0;
     right: 0;
     z-index: -1;
-  
+
     display: block;
     background-image: url('../../assets/misc/bg.jpg');
-    background-size:cover;
+    background-size: cover;
     width: 100%;
     height: 100vh;
-  
+
     -webkit-filter: blur(8px);
     -moz-filter: blur(8px);
     -o-filter: blur(8px);
@@ -97,46 +109,49 @@ html{
     background-repeat: no-repeat;
 }
 
-#projects{
-    background-color:  #7acfd6 ;
+#projects {
+    background-color: #7acfd6;
 }
-.code-joke{
+
+.code-joke {
     object-fit: contain;
 }
-#contact{
+
+#contact {
     background-color: grey;
 }
-#about{
+
+#about {
     background-color: #212121;
 }
-.scroll-down{
+
+.scroll-down {
     text-align: center;
     font-size: 3.5em;
-    color: rgba(0,0,0, 0.4);
+    color: rgba(0, 0, 0, 0.4);
     transition: color 500ms;
 }
-.about-text{
+
+.about-text {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5em;
 }
 
-.about-heading{
+.about-heading {
     font-family: 'Quicksand', sans-serif;
     border-bottom: 1px solid cornsilk;
     font-size: 4em;
 }
 
-.projects-heading{
+.projects-heading {
     font-family: 'Quicksand', sans-serif;
     border-bottom: 1px solid black;
     font-size: 4em;
 }
 
-/* #projects{
-    height: 100vh;
-} */
-.scroll-down:hover{
+.scroll-down:hover {
     color: white;
     transition: color 1000ms;
     text-decoration: none;
 }
+

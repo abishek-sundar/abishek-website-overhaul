@@ -33,3 +33,13 @@ $(function () {
     nav.classList.toggle("blue-bg");
   });
 })();
+
+$(document).ready(function() {
+ 
+  setTimeout(function(){
+      $('body').addClass('loaded');
+      $('h1').css('color','#222222');
+      $('#main-navbar').removeClass('d-none');
+  }, 2000);
+
+});

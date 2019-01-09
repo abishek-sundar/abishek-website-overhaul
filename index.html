@@ -13,169 +13,189 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="src/style/style.css" />
+    <link rel="stylesheet" href="src/style/preload.css">
 
     <title>Abishek Sundar</title>
 </head>
 
 <body id="body">
-    <div class="section h-100" id="me">
-        <nav id="main-navbar" class="navbar navbar-expand-md navbar-light align-items-center fixed-top trans-nav">
-            <div class="container">
-                <a class="navbar-brand righteous" href="#body">Abishek Sundar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link righteous" href="#about">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link righteous" href="#projects">My Projects</a>
-                        </li>
-                    </ul>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
 
-                    <ul class="navbar-nav navbar-right">
-                        <li class="nav-item">
-                            <a class="nav-link righteous" target="_blank" rel="noopener noreferrer" href="https://www.github.com/abishek-sundar">My
-                                Github</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link righteous" href="#contact">Contact Me</a>
-                        </li>
-                    </ul>
+    </div>
+    <div id="content">
+        <div class="section" id="me">
+            <nav id="main-navbar" class="navbar navbar-expand-md navbar-light align-items-center fixed-top trans-nav d-none">
+                <div class="container">
+                    <a class="navbar-brand righteous" href="#body">Abishek Sundar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link righteous" href="#about">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link righteous" href="#projects">My Projects</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav navbar-right">
+                            <li class="nav-item">
+                                <a class="nav-link righteous" target="_blank" rel="noopener noreferrer" href="https://www.github.com/abishek-sundar">My
+                                    Github</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link righteous" href="#contact">Contact Me</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <div class="container intro-container">
-            <div class="row align-items-center w-100 h-100 m-0 p-0">
-                <div class="intro-text">
-                    <div class="row h-100  justify-content-center">
-                        <img class=" col-12 col-lg-6 order-lg-2 myPic align-self-center " src="assets/misc/me.png" alt="Me" />
-                        <div class="col-12 col-lg-6 order-lg-1 align-self-start align-self-lg-center">
+            </nav>
+            <div class="container intro-container">
+                <div class="row align-items-center w-100 h-100 m-0 p-0">
+                    <div class="intro-text">
+                        <div class="row h-100  justify-content-center">
+                            <img class=" col-12 col-lg-6 order-lg-2 myPic align-self-center " src="assets/misc/me.png"
+                                alt="Me" />
+                            <div class="col-12 col-lg-6 order-lg-1 align-self-start align-self-lg-center">
 
-                            <div class="landingText">
-                                Hi, I'm Abishek
-                            </div>
-                            <hr class="landingLine">
-                            <div class="landingNote">
-                                I study computer engineering at University of Toronto.
+                                <div class="landingText">
+                                    Hi, I'm Abishek
+                                </div>
+                                <hr class="landingLine">
+                                <div class="landingNote">
+                                    I study computer engineering at University of Toronto.
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container pt-4 text-center">
-            <a href="#about" class="fas fa-arrow-circle-down scroll-down"></a>
-        </div>
-    </div>
-    <div class="section" id="about">
-        <div id="about-link"></div>
-        <div class="container">
-
-            <div class="row w-100">
-                <div class="col-12 col-lg-7">
-                    <h1 class="about-heading text-light text-center pt-3">About Me</h1>
-                </div>
-            </div>
-
-            <div class="row h-100 w-100 align-items-center justify-content-center">
-                <div class="col-12 col-lg-7 order-2 order-sm-1">
-                    <p class="about-text text-light">
-                        Ever since my inception to internet and technology, I have always found joy in tinkering with
-                        any
-                        hardware or software that I manage to get my hands on.<span class="d-none d-md-inline"> I
-                            understand that writing code that is
-                            easy to test is an acquired trait and work on perfecting my craft everyday.</span>
-                        I enjoy anything to do with algorithms or back-end programming and love the sense of
-                        accomplishment in developing
-                        features across the full stack as well.
-                    </p>
-                    <p class="about-text text-light pb-3 d-none d-md-block">
-                        Apart from coding, I enjoy basketball, podcasts and video games. I keep up with what's going on
-                        in the world of finance and am passionate about entrepreneurship. See my work under my
-                        projects!
-                    </p>
-                </div>
-                <div class="col-12 col-lg-5 d-block d-sm-none d-lg-block pr-0 mr-0 order-1 order-sm-2">
-                    <img src="./assets/misc/code.png" alt="lame code joke" class="code-joke img-fluid">
-                </div>
+            <div class="container pt-4 text-center">
+                <a href="#about" class="fas fa-arrow-circle-down scroll-down"></a>
             </div>
         </div>
-    </div>
-    <div class="section" id="projects">
-        <div class="container pb-4">
-            <h1 class="projects-heading text-dark text-center pt-3">My Projects</h1>
-            <div class="card-deck pt-3">
-                <div class="card">
-                    <img class="card-img-top" src=".../100px200/" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                      
+        <div class="section" id="about">
+            <div id="about-link"></div>
+            <div class="container">
+
+                <div class="row w-100">
+                    <div class="col-12 col-lg-7">
+                        <h1 class="about-heading text-light text-center pt-3">About Me</h1>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-img-top" src=".../100px200/" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                            content.</p>
+
+                <div class="row h-100 w-100 align-items-center justify-content-center">
+                    <div class="col-12 col-lg-7 order-2 order-sm-1">
+                        <p class="about-text text-light">
+                            Ever since my inception to internet and technology, I have always found joy in tinkering
+                            with
+                            any
+                            hardware or software that I manage to get my hands on.<span class="d-none d-md-inline"> I
+                                understand that writing code that is
+                                easy to test is an acquired trait and work on perfecting my craft everyday.</span>
+                            I enjoy anything to do with algorithms or back-end programming and love the sense of
+                            accomplishment in developing
+                            features across the full stack as well.
+                        </p>
+                        <p class="about-text text-light pb-3 d-none d-md-block">
+                            Apart from coding, I enjoy basketball, podcasts and video games. I keep up with what's
+                            going on
+                            in the world of finance and am passionate about entrepreneurship. See my work under my
+                            projects!
+                        </p>
                     </div>
-                </div>
-                <div class="w-100 d-none d-sm-block d-lg-none mt-4"></div>
-                <div class="card">
-                    <img class="card-img-top" src=".../100px200/" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to show that equal
-                            height action.</p>
-                    </div>
-                </div>
-                <div class="w-100 d-none d-lg-block mt-4"></div>
-                <div class="card">
-                    <img class="card-img-top" src=".../100px200/" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-                <div class="w-100 d-none d-sm-block d-lg-none mt-4"></div>
-                <div class="card">
-                    <img class="card-img-top" src=".../100px200/" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                            content.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src=".../100px200/" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to show that equal
-                            height action.</p>
+                    <div class="col-12 col-lg-5 d-block d-sm-none d-lg-block pr-0 mr-0 order-1 order-sm-2">
+                        <img src="./assets/misc/code.png" alt="lame code joke" class="code-joke img-fluid">
                     </div>
                 </div>
             </div>
         </div>
+        <div class="section" id="projects">
+            <div class="container pb-4">
+                <h1 class="projects-heading text-dark text-center pt-3">My Projects</h1>
+                <div class="card-deck pt-3">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to
+                                additional content. This content is a little bit longer.</p>
 
-    </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-sm-block d-lg-none mt-4"></div>
+                    <div class="card">
+                        <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in
+                                to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-lg-block mt-4"></div>
+                    <div class="card">
+                        <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-sm-block d-lg-none mt-4"></div>
+                    <div class="card">
+                        <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src=".../100px200/" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in
+                                to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <div class="section" id="contact">
-        <div class="container">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere temporibus, amet qui mollitia tempora
-                adipisci veniam repellendus assumenda ipsa provident ipsam aliquam enim ab ut quibusdam ex! Molestiae
-                asperiores eum nobis repellendus. Odio, assumenda veniam quidem sit inventore numquam facilis,
-                blanditiis, ipsum ipsa perferendis praesentium! Delectus eos incidunt eaque dolorem.
-            </h3>
+        </div>
+
+        <div class="section" id="contact">
+            <div class="container">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere temporibus, amet qui mollitia
+                    tempora
+                    adipisci veniam repellendus assumenda ipsa provident ipsam aliquam enim ab ut quibusdam ex!
+                    Molestiae
+                    asperiores eum nobis repellendus. Odio, assumenda veniam quidem sit inventore numquam facilis,
+                    blanditiis, ipsum ipsa perferendis praesentium! Delectus eos incidunt eaque dolorem.
+                </h3>
+            </div>
+
         </div>
 
     </div>
