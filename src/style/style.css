@@ -84,7 +84,7 @@ html {
     transition: background 500ms;
 }
 #me{
-    height: 100vh;
+    height: calc(100vh - 70px);
 }
 #me:before {
     content: "";
@@ -164,7 +164,6 @@ html {
 }
 .card-title{
     font-family: 'Cabin', sans-serif;
-    /* font-size: 1.5em; */
 }
 
 .card-img-top{
