@@ -34,13 +34,14 @@ $(function () {
   });
 })();
 
-$(document).ready(function() {
- 
-  setTimeout(function(){
-      $('body').addClass('loaded');
-      $('h1').css('color','#222222');
+$(document).ready(function () {
+
+  setTimeout(function () {
+    $('body').addClass('loaded');
+    $('h1').css('color', '#222222');
+    setTimeout(function () {
       $('#main-navbar').removeClass('d-none');
-      
-  }, 2000);
+    }, 800);
+  }, 0000);
 
 });
