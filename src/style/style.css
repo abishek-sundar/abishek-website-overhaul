@@ -18,14 +18,19 @@ body {
 .navbar-light .navbar-brand {
     color: rgba(0, 0, 0, 0.3);
 }
-html.loading, loading body{
-    margin: 0; height: 100%; 
+
+html.loading,
+loading body {
+    margin: 0;
+    height: 100%;
     overflow: hidden;
 }
+
 body,
 html {
     height: 100%;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -37,6 +42,7 @@ html {
 }
 
 .intro-container {
+    margin-top: 3%;
     width: 80vw;
     height: 75vh;
     overflow: hidden;
@@ -47,10 +53,15 @@ html {
     font-size: calc(20px + (36 - 20) * ((100vw - 300px) / (1600 - 300)));
     color: rgb(105, 105, 105);
     text-align: center;
+    opacity: 1;
+}
+.landingNote.overflow{
+    opacity:0;
 }
 
 .landingText {
     font-family: 'Raleway', sans-serif;
+    line-height: 1.3;
     font-size: calc(42px + (118 - 42) * ((100vw - 300px) / (1600 - 300)));
 }
 
@@ -190,7 +201,7 @@ html {
     max-width: 96%;
     display: block;
     margin: auto;
-    border:
-        padding-top: 1%;
+    border: 3px solid rgb(163, 208, 247);
+    margin-top: 2%;
     border-radius: 2.5%;
 }
