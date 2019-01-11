@@ -34,15 +34,16 @@ $(document).ready(function () {
       nav.classList.toggle("blue-bg");
     });
   });
-  if (window.performance) {
-    if (performance.navigation.type == 1) {
-      preloadScreen(300);
-    } else {
-      preloadScreen(2000);
-    }
-  }else{
-    preloadScreen(2000);
-  }
+
+
+  $("body").imagesLoaded( { background: true }, function() {
+
+    $('body').addClass('loaded');
+    $('h1').css('color', '#222222');
+    setTimeout(function () {
+      $('#main-navbar').removeClass('trans-init');
+    }, 800);
+  });
     
  
 
