@@ -31,10 +31,6 @@ html {
     height: 100%;
 }
 
-html {
-    /* scroll-behavior: smooth; */
-}
-
 .myPic {
     flex-grow: 1;
     /* max-width: 85%; */
@@ -42,7 +38,7 @@ html {
 }
 
 .intro-container {
-    margin-top: 3%;
+    margin-top: 1.5%;
     width: 80vw;
     height: 75vh;
     overflow: hidden;
@@ -212,6 +208,13 @@ html {
 }
 .navbar-light .navbar-brand{
     color: #993723;
+}
+.trans-init{
+    opacity: 0;
+}
+#main-navbar{
+    transition-timing-function: ease-out;    
+    transition: 0.8s;
 }
 @media (min-width: 992px) {
     .myPic {
