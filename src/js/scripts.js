@@ -81,7 +81,7 @@ $(document).ready(function () {
             }, 1000);
             if ($(window).width() < 768) {
               if (goto != "#body") {
-                console.log($(window).width());
+                // console.log($(window).width());
               
                 document.querySelector("button").click();
                 
