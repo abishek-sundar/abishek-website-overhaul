@@ -42,7 +42,7 @@ $(document).ready(function () {
       setTimeout(function () {
         $('#main-navbar').removeClass('d-none');
       }, 800);
-    }, 2000);
+    }, 000);
   });
 
   $(function () {
