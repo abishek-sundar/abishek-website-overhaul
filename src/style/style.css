@@ -4,6 +4,7 @@ body {
     background-size: cover;
     -o-background-size: cover;
     padding-top: 70px;
+    overflow-x:hidden;
 }
 
 .righteous {
@@ -97,7 +98,11 @@ html {
 #me {
     height: calc(100vh - 70px);
 }
-
+#content{
+    width: 100vw;
+    /* margin-left: 0;
+    margin-right: 0; */
+}
 #me:before {
     content: "";
     position: fixed;
