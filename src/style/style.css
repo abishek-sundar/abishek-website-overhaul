@@ -32,7 +32,7 @@ html {
 }
 
 html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 .myPic {
@@ -210,7 +210,9 @@ html {
 .myPic {
     max-height: 72%;
 }
-
+.navbar-light .navbar-brand{
+    color: #993723;
+}
 @media (min-width: 992px) {
     .myPic {
         max-height: 100%;

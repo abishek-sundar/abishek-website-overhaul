@@ -48,10 +48,28 @@ $(document).ready(function () {
   $(function () {
     var introContainer = document.querySelector(".intro-container");
     introContainer.addEventListener("overflow", function () {
-        document.querySelector(".landingNote").classList.add("overflow");
+      document.querySelector(".landingNote").classList.add("overflow");
     });
     introContainer.addEventListener("underflow", function () {
-        document.querySelector(".landingNote").classList.remove("overflow");
+      document.querySelector(".landingNote").classList.remove("overflow");
     });
   });
+
+  $(function () {
+    var links = document.querySelectorAll("a");
+    for (var i = 0; i < links.length; i++) {
+      for (var j = 0; j < links[i].classList.length; j++) {
+        if (links[i].classList[j] == "animate-scroll") {
+          links[i].addEventListener("click", function () {
+            var goto = this.getAttribute('href');
+            console.log(goto);
+            $('html, body').animate({
+              scrollTop: $(goto).offset().top - 55
+            }, 1200);
+          });
+        }
+      }
+    }
+  });
+
 });
