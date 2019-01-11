@@ -34,17 +34,19 @@ $(document).ready(function () {
       nav.classList.toggle("blue-bg");
     });
   });
-  
-  $(function (){
+
+  $(function () {
     var imagesLoaded = 0;
-    setTimeout(function(){
+    setTimeout(function () {
       // console.log("Waiting");
-      if(!imagesLoaded){
+      if (!imagesLoaded) {
         // console.log("images loaded failed");
         preloadScreen(300);
       }
     }, 4700);
-    $("body").imagesLoaded( { background: true }, function() {
+    $("body").imagesLoaded({
+      background: true
+    }, function () {
       imagesLoaded = 1;
       $('body').addClass('loaded');
       $('h1').css('color', '#222222');
@@ -53,7 +55,7 @@ $(document).ready(function () {
       }, 800);
     });
   });
-  
+
 
 
   $(function () {
@@ -77,6 +79,22 @@ $(document).ready(function () {
             $('html, body').animate({
               scrollTop: $(goto).offset().top - 55
             }, 1000);
+            if ($(window).width() < 768) {
+              if (goto != "#body") {
+                console.log($(window).width());
+              
+                document.querySelector("button").click();
+                
+              } else {
+                var nav = document.querySelector("#main-navbar");
+                var classes = nav.classList;
+                for (var i = 0; i < classes.length; i++) {
+                  if (classes[i] == "blue-bg") {
+                    document.querySelector("button").click();
+                  }
+                }
+              }
+            }
           });
         }
       }
