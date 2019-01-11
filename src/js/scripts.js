@@ -19,21 +19,21 @@ $(document).ready(function () {
     });
   });
 
-  (function () {
+  $(function () {
     var html = document.querySelector("html");
     if (html.scrollTop != 0) {
       var nav = document.querySelector("#main-navbar");
       nav.classList.toggle("scrolled");
     }
-  })();
+  });
 
-  (function () {
+  $(function () {
     var toggler = document.querySelector(".navbar-toggler");
     toggler.addEventListener("click", function () {
       var nav = document.querySelector("#main-navbar");
       nav.classList.toggle("blue-bg");
     });
-  })();
+  });
 
   $(function () {
     setTimeout(function () {
