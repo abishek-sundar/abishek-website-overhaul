@@ -37,7 +37,7 @@ html {
 
 .myPic {
     flex-grow: 1;
-    max-width: 80%;
+    /* max-width: 85%; */
     object-fit: contain;
 }
 
@@ -50,7 +50,7 @@ html {
 
 .landingNote {
     font-family: 'Raleway', sans-serif;
-    font-size: calc(20px + (36 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
     color: rgb(105, 105, 105);
     text-align: center;
     opacity: 1;
@@ -63,7 +63,7 @@ html {
 .landingText {
     font-family: 'Raleway', sans-serif;
     line-height: 1.3;
-    font-size: calc(42px + (118 - 42) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(42px + (96 - 42) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .landingLine {
@@ -135,7 +135,7 @@ html {
 }
 
 #contact {
-    background-color: grey;
+    background-color: #632C3C;
 }
 
 #about {
@@ -205,4 +205,14 @@ html {
     padding: 0px;
     margin-top: 2%;
     border-radius: 2.5%;
+}
+
+.myPic {
+    max-height: 72%;
+}
+
+@media (min-width: 992px) {
+    .myPic {
+        max-height: 100%;
+    }
 }
