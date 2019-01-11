@@ -34,18 +34,27 @@ $(document).ready(function () {
       nav.classList.toggle("blue-bg");
     });
   });
-
-
-  $("body").imagesLoaded( { background: true }, function() {
-
-    $('body').addClass('loaded');
-    $('h1').css('color', '#222222');
-    setTimeout(function () {
-      $('#main-navbar').removeClass('trans-init');
-    }, 800);
+  
+  $(function (){
+    var imagesLoaded = 0;
+    setTimeout(function(){
+      // console.log("Waiting");
+      if(!imagesLoaded){
+        // console.log("images loaded failed");
+        preloadScreen(300);
+      }
+    }, 4700);
+    $("body").imagesLoaded( { background: true }, function() {
+      imagesLoaded = 1;
+      $('body').addClass('loaded');
+      $('h1').css('color', '#222222');
+      setTimeout(function () {
+        $('#main-navbar').removeClass('trans-init');
+      }, 800);
+    });
   });
-    
- 
+  
+
 
   $(function () {
     var introContainer = document.querySelector(".intro-container");
@@ -64,7 +73,7 @@ $(document).ready(function () {
         if (links[i].classList[j] == "animate-scroll") {
           links[i].addEventListener("click", function () {
             var goto = this.getAttribute('href');
-            console.log(goto);
+            // console.log(goto);
             $('html, body').animate({
               scrollTop: $(goto).offset().top - 55
             }, 1000);
