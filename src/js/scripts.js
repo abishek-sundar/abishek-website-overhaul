@@ -59,6 +59,7 @@ $(document).ready(function () {
   });
   var prevgoto;
   var prevScroll;
+  var animating = false;
   $(function () {
     var links = document.querySelectorAll("a");
     for (var i = 0; i < links.length; i++) {
@@ -70,9 +71,15 @@ $(document).ready(function () {
             var goto = this.getAttribute('href');
             var oldScroll = $(window).scrollTop();
             var newScroll = $(goto).offset().top - 55;
-            if (prevgoto !== goto || Math.floor(prevScroll) !== Math.floor(oldScroll)) {
+            if (prevgoto !== goto || (!animating && Math.floor(prevScroll) !== Math.floor(oldScroll))) {
+              animating = true;
               $('html, body').animate({
                 scrollTop: newScroll
+              }, 1000);
+              var timer;
+              clearTimeout(timer);
+              timer = setTimeout(function () {
+                animating = false;
               }, 1000);
             }
             prevgoto = goto;
