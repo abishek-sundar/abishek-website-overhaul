@@ -19,7 +19,14 @@ body {
 .navbar-light .navbar-brand {
     color: rgba(0, 0, 0, 0.3);
 }
+#mail-link{
+    text-decoration: none;
+    color: white;
+}
 
+#mail-link:hover{
+    text-decoration: underline;
+}
 html.loading,
 loading body {
     margin: 0;
