@@ -15,7 +15,9 @@ body {
     background-color: rgba(0, 0, 0, 0);
     transition: background 500ms;
 }
-
+#favicon{
+    object-fit: contain;
+}
 .navbar-light .navbar-brand {
     color: rgba(0, 0, 0, 0.3);
 }
