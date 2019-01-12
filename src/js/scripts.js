@@ -80,12 +80,12 @@ $(document).ready(function () {
               scrollTop: $(goto).offset().top - 55
             }, 1000);
             if ($(window).width() < 768) {
-              if (goto != "#body") {
+              if (goto != "#body" && this.id != "scroll") {
                 // console.log($(window).width());
               
                 document.querySelector("button").click();
                 
-              } else {
+              } else if (goto=="#body"){
                 var nav = document.querySelector("#main-navbar");
                 var classes = nav.classList;
                 for (var i = 0; i < classes.length; i++) {
