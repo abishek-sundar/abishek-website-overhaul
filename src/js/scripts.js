@@ -70,7 +70,7 @@ $(document).ready(function () {
             var goto = this.getAttribute('href');
             var oldScroll = $(window).scrollTop();
             var newScroll = $(goto).offset().top - 55;
-            if (prevgoto !== goto || Math.floor(prevScroll) !== Math.floor((newScroll))) {
+            if (prevgoto !== goto || Math.floor(prevScroll) !== Math.floor(oldScroll)) {
               $('html, body').animate({
                 scrollTop: newScroll
               }, 1000);
