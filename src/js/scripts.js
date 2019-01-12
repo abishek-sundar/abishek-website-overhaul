@@ -32,9 +32,7 @@ $(document).ready(function () {
   $(function () {
     var imagesLoaded = 0;
     setTimeout(function () {
-      // console.log("Waiting");
       if (!imagesLoaded) {
-        // console.log("images loaded failed");
         preloadScreen(300);
       }
     }, 4700);
@@ -70,18 +68,9 @@ $(document).ready(function () {
             event.preventDefault();
 
             var goto = this.getAttribute('href');
-            // console.log(goto);
             var oldScroll = $(window).scrollTop();
             var newScroll = $(goto).offset().top - 55;
-            // console.log("hwew");
-            // console.log(newScroll != oldScroll);
-            console.log(prevgoto);
-            console.log(goto);
-            console.log(prevScroll);
-            console.log(newScroll);
-            // console.log(goto);
             if (prevgoto !== goto || Math.floor(prevScroll) !== Math.floor((newScroll))) {
-              console.log("here");
               $('html, body').animate({
                 scrollTop: newScroll
               }, 1000);
