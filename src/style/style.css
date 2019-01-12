@@ -30,6 +30,8 @@ loading body {
 body,
 html {
     height: 100%;
+    max-width: 100vw;
+    
 }
 
 .myPic {
