@@ -50,7 +50,7 @@ html {
 }
 
 .intro-container {
-    margin-top: 1.5%;
+    margin-top: 10vh;
     width: 80vw;
     height: 75vh;
     overflow: hidden;
@@ -92,6 +92,8 @@ html {
 
 #me {
     overflow: auto;
+    margin-top: -70px;
+    height: 100vh;
     position: relative;
 }
 
@@ -106,9 +108,6 @@ html {
     transition: background 500ms;
 }
 
-#me {
-    height: calc(100vh - 70px);
-}
 #me:before {
     content: "";
     position: fixed;
