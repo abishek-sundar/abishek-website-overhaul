@@ -66,8 +66,6 @@ $(document).ready(function () {
       for (var j = 0; j < links[i].classList.length; j++) {
         if (links[i].classList[j] == "animate-scroll") {
           links[i].addEventListener("click", function (event) {
-            event.preventDefault();
-
             var goto = this.getAttribute('href');
             var oldScroll = $(window).scrollTop();
             var newScroll = $(goto).offset().top - 55;
